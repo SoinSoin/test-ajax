@@ -1,19 +1,23 @@
 google.charts.load('current', {'packages':['corechart']});
-google.charts.setOnLoadCallback(drawChart);
+google.charts.setOnLoadCallback(drawChart(tableau_js));
+
+$(document).ready(function(){
+  $.post("ajax.php", function(data){
+    $(".requete").html(data);
+    console.log(data);
+  });
+
+});
 
 
 
-function drawChart() {
-  var data = google.visualization.arrayToDataTable([
-    // ['Year', 'Sales', 'Expenses'],
-    // ['2004',  1000,      400],
-    // ['2005',  1170,      460],
-    // ['2006',  660,       1120],
-    // ['2007',  1030,      540]
-  ]);
+function drawChart(data) {
+  var tablo = google.visualization.arrayToDataTable(
+data
+);
 
   var options = {
-    title: 'Company Performance',
+    title: 'derniere chance',
     curveType: 'function',
     legend: { position: 'bottom' }
   };
