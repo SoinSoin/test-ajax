@@ -3,11 +3,5 @@
         { "id": "", "label": "humeur", "pattern": "", "type": "string" },
         { "id": "", "label": "nb personnes", "pattern": "", "type": "number" }
     ],
-    "rows": [
-        { "c": [{ "v": "1", "f": null }, { "v": 3, "f": null }] },
-        { "c": [{ "v": "2", "f": null }, { "v": 1, "f": null }] },
-        { "c": [{ "v": "3", "f": null }, { "v": 7, "f": null }] },
-        { "c": [{ "v": "4", "f": null }, { "v": 4, "f": null }] },
-        { "c": [{ "v": "5", "f": null }, { "v": 2, "f": null }] }
-    ]
+    "rows": [{ "c": [{"v":" 1","f":null},{"v":6,"f":null}] },{ "c": [{"v":" 2","f":null},{"v":7,"f":null}] },{ "c": [{"v":" 3","f":null},{"v":2,"f":null}] },]
 }
